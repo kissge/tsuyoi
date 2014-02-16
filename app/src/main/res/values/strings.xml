@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">つよい家計簿</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">キャンセル</string>
+    <string name="dialog_delete">削除しますか？</string>
+    <string name="dialog_new_category">新規カテゴリ</string>
+    <string name="dialog_input_category_name">カテゴリ名を入力</string>
+    <string name="error_empty_category_name">カテゴリ名が入力されていません</string>
+    <string name="error_invalid_amount">金額を正しく入力して下さい</string>
+    <string name="error_duplicated">既に存在します</string>
+    <string name="error_no_data_to_load">読み込むデータがありません</string>
+    <string name="error_write_sdcard">SD カードへの書き込みに失敗しました</string>
+    <string name="message_category_added">カテゴリを追加しました</string>
+    <string name="message_deleted">削除しました</string>
+    <string name="message_csv_exported">CSV ファイルにエクスポートしました</string>
+    <string name="message_saved">記録しました</string>
+    <string name="menu_csv_export">CSV エクスポート</string>
+    <string name="menu_view">閲覧</string>
+    <string name="menu_edit">編集</string>
+    <string name="menu_delete">削除</string>
+    <string name="menu_new_category">新規カテゴリ..</string>
+    <string name="ui_register">登録</string>
+    <string name="ui_update">変更</string>
+</resources>

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:width="100dp"
+        android:textSize="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:textAlignment="viewEnd"
+        android:layout_toLeftOf="@+id/insert"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:alpha="1" />
+
+    <requestFocus />
+
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="内容"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:layout_below="@+id/dtpicker"
+        android:layout_alignLeft="@+id/dtpicker"
+        android:layout_toLeftOf="@+id/checkIncome">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="¥"
+        android:id="@+id/textView"
+        android:textSize="50dp"
+        android:layout_alignBottom="@+id/editAmount"
+        android:layout_alignLeft="@+id/editAmount"
+        android:textColor="#b0b0b0"
+        android:layout_alignTop="@+id/editAmount"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登録"
+        android:layout_alignTop="@+id/editAmount"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/textView" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="収入"
+        android:id="@+id/checkIncome"
+        android:checked="false"
+        android:textSize="12dp"
+        android:layout_alignBottom="@+id/editContent"
+        android:layout_alignRight="@+id/insert" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00/00 日 00:00"
+        android:id="@+id/dtpicker"
+        android:layout_below="@+id/editAmount"
+        android:layout_alignLeft="@+id/editAmount" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/spinner"
+        android:layout_alignTop="@+id/dtpicker"
+        android:layout_alignBottom="@+id/dtpicker"
+        android:layout_toRightOf="@+id/dtpicker"
+        android:layout_alignRight="@+id/insert" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editContent"
+        android:layout_alignLeft="@+id/editContent" />
+
+</RelativeLayout>
