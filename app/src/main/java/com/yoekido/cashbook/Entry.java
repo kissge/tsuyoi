@@ -35,7 +35,7 @@ public class Entry
 
     public String toString ()
     {
-        return String.format("%s\\%d%s \n %s / %s",
+        return String.format("%s\u00A5%d%s \n %s / %s",
                 content.length() == 0 ? "" : content + ": ",
                 Math.abs(amount),
                 amount < 0 ? " [収入]" : "",
